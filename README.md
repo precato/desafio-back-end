@@ -8,7 +8,7 @@
 </p>
 
 # :rocket: Sobre o desafio
-Para você já ir se aquecendo para o que está por vir, queremos propos um desafio para você.
+Para você já ir se aquecendo para o que está por vir, queremos propor um desafio para você.
 
 Queremos que você implemente um servidor que recebrá inscrições de um formulário. A partir das regas de negócio definidas, você precisará construir uma API REST que realize a inscrição, caso esta seja válida, armamazenando as informações em um banco de dados relacional.
 
@@ -37,4 +37,4 @@ Para entregar esse desafio, você deve criar um repositório no **GitHub** conte
 
 Em seguida, basta enviar o link do repositório para o email **dev.gi@precato.com.br** com o assunto **Desafio desenvolvedor back-end júnior**.
 
-**- Observações:** Não esqueça de deixar o repositório público para que possamos visualizar sua resolução. 😉
+- **Observações:** Não esqueça de deixar o repositório público para que possamos visualizar sua resolução. 😉
