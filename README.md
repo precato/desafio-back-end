@@ -12,11 +12,11 @@ Para você já ir se aquecendo para o que está por vir, queremos propos um desa
 
 Queremos que você implemente um servidor que recebrá inscrições de um formulário. A partir das regas de negócio definidas, você precisará construir uma API REST que realize a inscrição, caso esta seja válida, armamazenando as informações em um banco de dados relacional.
 
-**Inscrição no fluxo:** No sistema de captação de leads, temos um formulário de inscrição em um fluxo de mensagens com notícias e informações sobre os precatórios de nossos clientes. Para isso, precisamos de uma API capaz de receber a inscrição pelo formulário e registrá-la no banco dedados.
+- **Inscrição no fluxo:** No sistema de captação de leads, temos um formulário de inscrição em um fluxo de mensagens com notícias e informações sobre os precatórios de nossos clientes. Para isso, precisamos de uma API capaz de receber a inscrição pelo formulário e registrá-la no banco dedados.
 
-**Relatórios de inscrição:** Para medir os resultados desse formulário, temos uma aplicação que pesquisa as inscrições dentro de um certo período de data e relaciona com os precatórios que compramos. Para que essa aplicação funcione corretamente, precisamos de uma API capaz de receber uma data inicial e uma data final e retorne todas as inscrições realizadas dentro desse período.
+- **Relatórios de inscrição:** Para medir os resultados desse formulário, temos uma aplicação que pesquisa as inscrições dentro de um certo período de data e relaciona com os precatórios que compramos. Para que essa aplicação funcione corretamente, precisamos de uma API capaz de receber uma data inicial e uma data final e retorne todas as inscrições realizadas dentro desse período.
 
-**Observações:** O desafio deve ser desenvolvido utilizando Javascript ou Typescript, sendo obrigatória a utilização de NodeJS.
+- **Observações:** O desafio deve ser desenvolvido utilizando Javascript ou Typescript, sendo obrigatória a utilização de NodeJS.
 
 ## Regras de negócio
 1. A inscrição só deve ser feita com um email válido.
