@@ -35,6 +35,6 @@ Para te ajudar a entender um pouco melhor, essa é a entidade da tabela forms_an
 # :calendar: Entrega
 Para entregar esse desafio, você deve criar um repositório no **GitHub** contendo a sua implementação junto com as informações necessárias para rodar o seu projeto.
 
-Em seguida, basta enviar o link do repositório para o email **dev.gi@precato.com.br** com o assunto **Desafio desenvolvedor back-end júnior**.
+Em seguida, basta enviar o link do repositório para o email **dev.gi@precato.com.br** com o assunto **"Desafio desenvolvedor back-end júnior"**.
 
 - **Observações:** Não esqueça de deixar o repositório público para que possamos visualizar sua resolução. 😉
