@@ -10,26 +10,26 @@
 # :rocket: Sobre o desafio
 Para você já ir se aquecendo para o que está por vir, queremos propor um desafio para você.
 
-Queremos que você implemente um servidor que recebrá inscrições de um formulário. A partir das regas de negócio definidas, você precisará construir uma API REST que realize a inscrição, caso esta seja válida, armamazenando as informações em um banco de dados relacional.
+Vamos supor uma aplicação que envia disparos de mensagens de SMS e registra esses disparos em um banco de dados. Queremos que você implemente um servidor que receberá atualizações de status dessas mensagens. A partir das regras de negócio definidas, você precisará construir uma API REST que realize a atualização das informações armazenadas em um banco de dados relacional e outra que busque os dados de mensagens no banco a partir do status da mensagem para exibir em um relatório.
 
-- **Inscrição no fluxo:** No sistema de captação de leads, temos um formulário de inscrição em um fluxo de mensagens com notícias e informações sobre os precatórios de nossos clientes. Para isso, precisamos de uma API capaz de receber a inscrição pelo formulário e registrá-la no banco dedados.
+**Atualização de status:** As mensagens de SMS são registradas no banco de dados e disparados por um sistema externo, que posteriormente envia uma requisição REST para atualizar o status da mensagem. Para isso, precisamos de uma API capaz de receber o ID do disparo e o status da mensagem e atualizar o registro no banco de dados.
 
-- **Relatórios de inscrição:** Para medir os resultados desse formulário, temos uma aplicação que pesquisa as inscrições dentro de um certo período de data e relaciona com os precatórios que compramos. Para que essa aplicação funcione corretamente, precisamos de uma API capaz de receber uma data inicial e uma data final e retorne todas as inscrições realizadas dentro desse período.
+**Relatórios de mensagens:** Para medir os resultados dos envios, temos uma aplicação que pesquisa os registros de disparo de acordo com o status da mensagem. Para que essa aplicação funcione corretamente, precisamos de uma API que seja capaz de receber um status e retornar todos os registros do banco de dados que estão marcados com esse mesmo status.
 
-- **Observações:** O desafio deve ser desenvolvido utilizando Javascript ou Typescript, sendo obrigatória a utilização de NodeJS.
+**Observações:** O desafio deve ser desenvolvido utilizando Javascript ou Typescript, sendo obrigatória a utilização de NodeJS.
 
 ## Regras de negócio
-1. A inscrição só deve ser feita com um email válido.
+1. A atualização só pode ser realizada se a requisição para tal for válida. Para que uma requisição seja válida, o ID recebido deve ser puramente numérico e o status precisa ser válido (deve ser um dos seguintes: "ENVIADO", "RECEBIDO", "ERRO DE ENVIO").
 
-2. Não devem ser registradas linhas duplicadas com o mesmo email no banco de dados.
+2. Antes de atualizar o registro, a aplicação deve verificar se existe um registro com aquele ID no banco de dados.
 
-3. A propriedade "created_at" da tabela forms_answers deve ser preenchida com a data de inscrição do formulário.
+3. A propriedade status estará inicialmente vazia.
 
 ## Dados
-Para te ajudar a entender um pouco melhor, essa é a entidade da tabela forms_answers, necessária para você resolver o seu desafio.
+Para te ajudar a entender um pouco melhor, essa é a entidade da tabela sms_messages, necessária para você resolver o seu desafio.
 
 <p align="center">
-  <img  src="./assets/forms_answers.png">
+  <img  src="./assets/sms-database.png">
 </p>
 
 # :calendar: Entrega
@@ -37,4 +37,4 @@ Para entregar esse desafio, você deve criar um repositório no **GitHub** conte
 
 Em seguida, basta enviar o link do repositório para o email **dev.gi@precato.com.br** com o assunto **"Desafio desenvolvedor back-end júnior"**.
 
-- **Observações:** Não esqueça de deixar o repositório público para que possamos visualizar sua resolução. 😉
+**Observações:** Não esqueça de deixar o repositório público para que possamos visualizar sua resolução. 😉
